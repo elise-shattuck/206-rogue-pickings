@@ -1,0 +1,146 @@
+/***** BASE STYLES *****/
+
+@font-face {
+    font-family: 'Wisdom Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Wisdom Script AJ.woff') format('woff');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/***** GRID *****/
+
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 600px;
+    float: left;
+}
+
+.third-width {
+    width: 399px;
+    margin: 0 auto;
+    float: left;
+}
+
+/***** HEADER *****/
+
+header h1 { 
+    padding: 50px 0 40px 0;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+header h1 span {
+    color: #77a466;
+}
+
+nav {
+    float: right; 
+    padding: 76px 0px 40px 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #77a466;
+    padding-left: 18px;
+}
+
+/***** TOP SECTION *****/
+
+#top img {
+    border-bottom: 3px solid #77a466;
+    border-top: 3px solid #77a466;
+}
+
+#top h2 {
+    color: #77a466;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 29px 0px;
+}
+
+#top p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 39px;
+}
+
+/***** BOTTOM SECTION *****/
+
+#bottom {
+    overflow-y: auto;
+    border-top: 1px solid #dedbdc;
+    border-bottom: 1px solid #dedbdc;
+    clear: both;
+}
+
+#bottom h3 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+#address h3, #review h3, #address p, #review p {
+    padding-left: 30px;
+}
+
+#bottom p {
+    font-size: 16px;
+    line-height: 18px;
+    width: 330px;
+    margin: 28px 0px;
+}
+
+#review {
+    border-right: 1px solid #dedbdc;
+    border-left: 1px solid #dedbdc;
+}
+
+#bottom ul{
+    padding: 0;
+    margin: 28px 0px;
+}
+
+#bottom ul li {
+    font-size: 16px;
+    line-height: 18px;
+    list-style: none;
+    color: #77a466;
+}
+
+/***** FOOTER *****/
+
+footer {
+    clear: auto;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 32px 0px;
+}
+
+footer span {
+    text-transform: none;
+    font-family: 'Wisdom Script Regular', script;
+    color: #77a466;
+    font-size: 16px;
+    line-height: 23px;
+}
