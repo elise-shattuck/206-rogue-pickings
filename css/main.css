@@ -13,14 +13,16 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -47,17 +49,18 @@ h4 {
 p {
 	font-size: 0.875em;
 	line-height: 1.3125em;
-    padding: 0 1.875em; /*not sure if this should be ems or pixels - 30px */
+    /*padding: 0 1.875em; */ /* not sure if this should be ems or pixels - 30px */
 }
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
+	/*height: 110px;*/
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 header h1 {
@@ -70,23 +73,38 @@ header h1 span {
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+	padding: 1.5em 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 3px solid #77a466;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
+	width: 100%;
+	margin: 1em 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
 /*The widths are in a percentage!*/
@@ -97,6 +115,7 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 .main-image {
@@ -126,15 +145,19 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	float: left;
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
+.section-one h4,
+.section-two h4,
+.section-three h4 {
 	padding: 10px 0;
 }
+
+/*** SAVE THE BELOW FOR TABLET/DESKTOP
 
 .section-two {
 	border-left: 1px solid #eee;
@@ -145,6 +168,8 @@ header nav ul li a{
 .section-three h4 {
 	padding: 10px 30px;
 }
+
+***/
 
 .menu {
 	list-style: none;
@@ -170,16 +195,28 @@ header nav ul li a{
 footer {
 	height: 50px;
 	border-top: 3px solid #eee;
+	width: 100%;
 	margin: 0 auto;
 	clear: both;
 	text-align: center;
-		display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+ 
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+ 
 }
