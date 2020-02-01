@@ -1,146 +1,165 @@
-/***** BASE STYLES *****/
-
-@font-face {
-    font-family: 'Wisdom Script Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/Wisdom Script AJ.woff') format('woff');
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: black;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
-/***** GRID *****/
-
-.full-width {
-    width: 1200px;
-    margin: 0 auto;
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.half-width {
-    width: 600px;
-    float: left;
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 12px;
 }
 
-.third-width {
-    width: 399px;
-    margin: 0 auto;
-    float: left;
+p {
+	font-size: 14px;
+	line-height: 21px;
+    padding: 0 30px;
 }
 
-/***** HEADER *****/
-
-header h1 { 
-    padding: 50px 0 40px 0;
-    text-transform: uppercase;
-    font-size: 40px;
+/*The widths are in a percentage!*/
+header {
+	height: 110px;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
 }
 
+header h1 {
+	float: left;
+	margin: 0;
+	padding: 38px 0;
+}
 header h1 span {
-    color: #77a466;
+	color: #77a466;
 }
 
-nav {
-    float: right; 
-    padding: 76px 0px 40px 0px;
+header nav {
+	float: right;
+	padding: 46px 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 0 10px;
+	display: inline;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
 }
 
-nav ul li {
-    display: inline-block;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #77a466;
-    padding-left: 18px;
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
 }
 
-/***** TOP SECTION *****/
-
-#top img {
-    border-bottom: 3px solid #77a466;
-    border-top: 3px solid #77a466;
+.main-image {
+	height: auto;
+	float: left;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
 }
 
-#top h2 {
-    color: #77a466;
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 29px 0px;
+.main-title {
+	height: auto;
+	float: left;
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 16px;
+	line-height: 25px;
 }
 
-#top p {
-    font-size: 16px;
-    line-height: 25px;
-    margin-bottom: 39px;
+.section-one,
+.section-two,
+.section-three {
+	width: 33%;
+	height: auto;
+	float: left;
+	border-top: 1px solid #eee;
 }
 
-/***** BOTTOM SECTION *****/
-
-#bottom {
-    overflow-y: auto;
-    border-top: 1px solid #dedbdc;
-    border-bottom: 1px solid #dedbdc;
-    clear: both;
+.section-one h4 {
+	padding: 10px 0;
 }
 
-#bottom h3 {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-top: 30px;
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
 }
 
-#address h3, #review h3, #address p, #review p {
-    padding-left: 30px;
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
 }
 
-#bottom p {
-    font-size: 16px;
-    line-height: 18px;
-    width: 330px;
-    margin: 28px 0px;
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
 }
 
-#review {
-    border-right: 1px solid #dedbdc;
-    border-left: 1px solid #dedbdc;
+.reviews {
+	color: #333;
+	font-size: 16px;
+	line-height: 21px;
 }
 
-#bottom ul{
-    padding: 0;
-    margin: 28px 0px;
+.address {
+	font-size: 16px;
+	line-height: 24px;
 }
 
-#bottom ul li {
-    font-size: 16px;
-    line-height: 18px;
-    list-style: none;
-    color: #77a466;
-}
-
-/***** FOOTER *****/
-
+/*The widths are in a percentage!*/
 footer {
-    clear: auto;
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
 }
-
-footer h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
-    padding: 32px 0px;
-}
-
 footer span {
-    text-transform: none;
-    font-family: 'Wisdom Script Regular', script;
-    color: #77a466;
-    font-size: 16px;
-    line-height: 23px;
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 14px;
 }
